@@ -1,0 +1,66 @@
+	
+body{
+	background-image: url(img/bgimg.jpg);
+}
+.heartPic
+      {
+          width: 1209px;
+          height: 630px;
+          margin: 60px auto 0 auto;
+		  
+      }
+      .heartPic ul
+      {
+          float: left;
+          width: 1209px;
+      }
+      .heartPic ul li
+      {
+          float: left;
+          width: 160px;
+          height: 100px;
+          padding: 2px;
+          cursor: pointer;
+         list-style:none;
+      }
+      .heartPic ul li.on
+      {
+          z-index: 99;
+      }
+      .heartPic ul li.on .in
+      {
+          position: relative;
+          left: -50px;
+          top: -50px;
+          padding: 5px 5px 5px 5px;
+          background: #fff9f8;
+      }
+      .heartPic ul li .pTxt
+      {
+          display: none;
+          width: 100px;
+          height: 15px;
+          text-align: center;
+          color: red;
+          overflow: hidden;
+		  
+      }
+	  .heartPic ul li .pTxt1
+      {
+          display: block;
+         
+		  
+      }
+      .heartPic .showDiv
+      {
+          display: block;
+      }
+      ul{
+          display: block;
+          list-style-type: disc;
+          margin-block-start:0.2em;
+          margin-block-end: 0.2em;
+          margin-inline-start: 0px;
+          margin-inline-end: 0px;
+          padding-inline-start: 40px;
+      }

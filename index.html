@@ -304,18 +304,11 @@
 
 <script>
 	function IsPC() {
-	    var userAgentInfo = navigator.userAgent;
-	    var Agents = ["Android", "iPhone",
-	                "SymbianOS", "Windows Phone",
-	                "iPad", "iPod"];
-	    var flag = "Self.html";
-	    for (var v = 0; v < Agents.length; v++) {
-	        if (userAgentInfo.indexOf(Agents[v]) > 0) {
-	            flag = "selfTwo.html";
-	            break;
-	        }
-	    }
-	    return flag;
+	   if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+			flag="Self.html"	   
+		} else {
+	       flag="selfTwo.html"
+	   }
 	}
 	 
 	var flag = IsPC();//true为PC端，false为手机端
